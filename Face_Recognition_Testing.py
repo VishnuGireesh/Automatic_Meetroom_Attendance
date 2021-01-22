@@ -27,10 +27,14 @@ def classify_face(im):
 
         face_names.append(name)
 
+
+
         for (top, right, bottom, left), name in zip(face_locations, face_names):
             cv2.rectangle(img, (left - 20, top - 20), (right + 20, bottom + 20), (255, 0, 0), 2)
             cv2.rectangle(img, (left - 20, bottom - 15), (right + 20, bottom + 20), (255, 0, 0), cv2.FILLED)
             cv2.putText(img, name, (left + 20, bottom + 15), cv2.FONT_HERSHEY_DUPLEX, 0.5, (255, 255, 255), 1)
+
+    print(face_names)
 
     while True:
         cv2.imshow('image', img)
@@ -46,7 +50,7 @@ def classify_face(im):
 
 
 
-classify_face("J:\FaceAppTests\Automatic_Meetroom_Attendance\Test\photo8.jpg")
+classify_face("J:\FaceAppTests\Automatic_Meetroom_Attendance\Test\\ret.jpg")
 
 
 

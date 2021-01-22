@@ -55,6 +55,7 @@ stud_list = {1: "Abhijith",
 
 
 def mark_attendance():
+    print("#### THE ATTENDANCE RECORDING STARTED YOU CAN RESUME TO MEETING ####")
     path = "J:\FaceAppTests\Automatic_Meetroom_Attendance"
     meeting_name = input("Enter Meeting name : ")
 
